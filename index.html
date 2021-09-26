@@ -1,3 +1,7 @@
+<!-- Copyright (c) 2012 The Chromium Authors. All rights reserved.
+Use of this source code is governed by a BSD-style license that can be
+found in the LICENSE file. -->
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
@@ -74,6 +78,9 @@
   <thead>
     <tr class="header" id="theader">
       <th id="nameColumnHeader" tabindex="0" role="button">Name</th>
+      <th id="typeColumnHeader" class="detailsColumn" tabindex="0" role="button">
+        Type
+      </th>
       <th id="sizeColumnHeader" class="detailsColumn" tabindex="0" role="button">
         Size
       </th>
@@ -85,12 +92,12 @@
   <tbody id="tbody">
   <tr>
     <td data-value="Folder"><a class="icon dir" href="link/to/folder">Folder</a></td>
-    <td class="detailsColumn" data-value="0"></td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+    <td class="detailsColumn" data-value="0"></td><td class="detailsColumn" data-value="0"></td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
   </tr>
   <tr>
   <tr>
     <td data-value="File"><a class="icon file" draggable="true" href="link/to/file">File.txt</a></td>
-    <td class="detailsColumn">0.00 MB</td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+    <td class="detailsColumn">File</td><td class="detailsColumn">0.00 MB</td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
   </tr>
 </tbody>
 </table>
