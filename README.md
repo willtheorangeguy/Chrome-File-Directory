@@ -42,12 +42,13 @@ In order to change the `index.html` file, replace the following with their real 
 ```html
 <tr>
     <td data-value="File"><a class="icon file" draggable="true" href="link/to/file">File.txt</a></td>
-    <td class="detailsColumn">0.00 MB</td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+    <td class="detailsColumn">File</td><td class="detailsColumn">0.00 MB</td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
   </tr>
 ```
 - Replace the `"File"` placeholder value with the real name of the file. 
 - Replace the `"link/to/file"` link with the actual link to the file. 
 - Replace the `File.txt` placeholder name with the real name and extension of the file.
+- Replace the `File` placeholder text with the actual file type.
 - Replace the `0.00 MB` placeholder size with the real size of the file. 
 - Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date the file was uploaded. 
 - Add more of these rows as neccesary. 
