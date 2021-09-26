@@ -1,6 +1,48 @@
 # Chrome File Directory
-The basic Chromium file directory page, as a simple HTML page. 
-Just change the title of the page to your custom tite, and update the links to each file or folder in your directory. 
+The basic, minimalistic Chromium file directory page, as a simple HTML page. 
+
+## Instructions
+To make this your own directory, either use the `directory_chromium.html` file to create a self generating directory - or use the `directory.html` file to create a custom directory listing with custom links. 
+
+In order to change the `directory.html` file, replace the following with their real values:
+
+**Basics:**
+```html
+<title id="title">Index of example</title>
+```
+- Update the `example` placeholder text with the actual directory name. This will be the title of the webpage. 
+
+```html
+<h1 id="header">Index of :\directory</h1>
+```
+- Update the `:\directory` placeholder text with the actual directory path. This will be the title displayed on the page.  
+
+**For a Folder:**
+```html
+<tr>
+    <td data-value="Folder"><a class="icon dir" href="link/to/folder">Folder</a></td>
+    <td class="detailsColumn" data-value="0"></td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+  </tr>
+```
+- Replace the `"Folder"` placeholder value with the real name of the folder. 
+- Replace the `"link/to/folder"` link with the actual link to the folder. 
+- Replace the `Folder` placeholder name with the real name of the folder.
+- Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date the folder was uploaded. 
+- Add more of these rows as neccesary. 
+
+**For a File:**
+```html
+<tr>
+    <td data-value="File"><a class="icon file" draggable="true" href="link/to/file">File.txt</a></td>
+    <td class="detailsColumn">0.00 MB</td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+  </tr>
+```
+- Replace the `"File"` placeholder value with the real name of the file. 
+- Replace the `"link/to/file"` link with the actual link to the file. 
+- Replace the `File.txt` placeholder name with the real name and extension of the file.
+- Replace the `0.00 MB` placeholder size with the real size of the file. 
+- Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date the file was uploaded. 
+- Add more of these rows as neccesary. 
 
 ## Credits
 None of this would be possible without the [Chromium Dev Team](https://www.chromium.org/). Thanks to them for creating this. 
@@ -35,8 +77,3 @@ None of this would be possible without the [Chromium Dev Team](https://www.chrom
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
-
-## Quote
-> “I have not failed 10,000 times. I have not failed once. I have succeeded in proving that those 10,000 ways will not work. When I have eliminated the ways that will not work, I will find the way that will work.”
-
-_- Thomas Edison_
