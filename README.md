@@ -5,7 +5,7 @@ Just change the title of the page to your custom tite, and update the links to e
 ## Credits
 None of this would be possible without the [Chromium Dev Team](https://www.chromium.org/). Thanks to them for creating this. 
 
-## Chromeium License
+## Chromium License
 ```
 // Copyright 2015 The Chromium Authors. All rights reserved.
 //
