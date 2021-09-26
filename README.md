@@ -11,11 +11,19 @@ In order to change the `directory.html` file, replace the following with their r
 <title id="title">Index of example</title>
 ```
 - Update the `example` placeholder text with the actual directory name. This will be the title of the webpage. 
-
 ```html
 <h1 id="header">Index of :\directory</h1>
 ```
 - Update the `:\directory` placeholder text with the actual directory path. This will be the title displayed on the page.  
+```html
+<div id="parentDirLinkBox" style="display:none">
+  <a id="parentDirLink" href="up/level" class="icon up">
+    <span id="parentDirText">[parent directory]</span>
+  </a>
+</div>
+```
+- If this is a directory inside of another directory, remove the `style="display:none"` placeholder. 
+- Change the `up/level` with the actual link to the folder above.
 
 **For a Folder:**
 ```html
