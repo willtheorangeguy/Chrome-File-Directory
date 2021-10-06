@@ -4,6 +4,8 @@ The basic, minimalistic Chromium file directory page, as a simple HTML page.
 ## Instructions
 To make this your own directory, either use the `index_chromium.html` file to create a self generating directory - or use the `index.html` file to create a custom directory listing with custom links. 
 
+If you would rather have the styling for the page in its own seperate location, copy the `style.css` file to that location and link it in the top of the `index.html` file. Don't forget to remove the `<style>...</style>` tags at the beginning of the HTML file though, otherwise all that work is for nothing. 
+
 In order to change the `index.html` file, replace the following with their real values:
 
 **Basics:**
