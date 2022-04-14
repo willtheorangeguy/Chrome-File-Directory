@@ -105,7 +105,7 @@ However, **to make this your own directory**, either use the `index_chromium.htm
 6. When you have customized the title, and added folder and file listings following the tutorials below, save the files and upload them to your web server.
 7. You're all set!
 
-## For a Folder
+### For a Folder
 
 ```html
 <tr>
@@ -120,7 +120,7 @@ However, **to make this your own directory**, either use the `index_chromium.htm
 * Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date the folder was uploaded.
 * Add more of these rows as necessary.
 
-## For a File
+### For a File
 
 ```html
 <tr>
