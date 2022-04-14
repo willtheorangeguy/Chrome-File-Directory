@@ -97,6 +97,11 @@ However, **to make this your own directory**, either use the `index_chromium.htm
 ```
 
 5. _Line 75_: If this is a directory inside of another directory, change the `up/level` placeholder in the `href="..."` tag with the actual link to the folder above.
+
+```html
+    <a id="parentDirLink" href="up/level" class="icon up">
+```
+
 6. When you have customized the title, and added folder and file listings following the tutorials below, save the files and upload them to your web server.
 7. You're all set!
 
