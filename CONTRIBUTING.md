@@ -50,8 +50,8 @@ Please contribute using [GitHub Flow](https://guides.github.com/introduction/flo
 
 Start reading our code and you'll get the hang of it.
 
-- The layout and functionality should remain as similar to the original Chromium file directory page as possible. Use current Chromium based browsers as a good example.
-- Do not edit the `index_chromium.html` page, as that is meant to show how the page originally worked in Chromium-based browsers.
+- The layout and functionality should remain as similar to the original Chromium file directory page as possible. Use current Chromium-based browsers as a good example.
+- **Do not** edit the `index_chromium.html` page, as that is meant to show how the page originally worked in Chromium-based browsers.
 - We indent using four spaces (NOT tabs).
 - Every function or piece of code should be heavily commented.
 - We use [Semantic Versioning](https://semver.org/).

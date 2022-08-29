@@ -12,7 +12,9 @@
 <!-- Badges -->
 <div align="center">
   <!-- Stability -->
-  <img alt="GitHub Actions State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/pages/pages-build-deployment/badge.svg">
+  <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/pages/pages-build-deployment/badge.svg">
+  <!-- Gitleaks -->
+  <img alt="Gitleaks State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/gitleaks.yml/badge.svg">
   <!-- Version -->
   <img alt="GitHub Version" src="https://img.shields.io/github/v/release/willtheorangeguy/Chrome-File-Directory">
   <!-- Issues -->
@@ -76,7 +78,7 @@ However, **to make this your own directory**, either use the `index_chromium.htm
 
 ### Basics
 
-1. If you would rather have the styling for the page in its own separate location, copy the `style.css` file to that location and link it in the top of the `index.html` file. More instructions can be found in the [CUSTOMIZATION](https://github.com/willtheorangeguy/Chrome-File-Directory/tree/main/docs/CUSTOMIZATION.md) documentation page.
+1. If you would rather have the styling for the page in its own separate location, copy the `style.css` file to that location and link it in the top of the `index.html` file. More instructions can be found in [CUSTOMIZATION](https://github.com/willtheorangeguy/Chrome-File-Directory/tree/main/docs/CUSTOMIZATION.md).
 
 2. _Line 69_: Update the `example` placeholder text between the `<title>` tags with the actual directory name. This will be the title of the webpage.
 
@@ -139,7 +141,7 @@ However, **to make this your own directory**, either use the `index_chromium.htm
 
 ## Support
 
-Further customization options for different types of files and folder structures can be found in [`CUSTOMIZATION.md`](https://github.com/willtheorangeguy/Chrome-File-Directory/tree/main/docs). More documentation is available in the **[Documentation](https://github.com/willtheorangeguy/Chrome-File-Directory/tree/main/docs)** and on the **[Wiki](https://github.com/willtheorangeguy/Chrome-File-Directory/wiki)**. If more support is required, please open a **[GitHub Discussion](https://github.com/willtheorangeguy/Chrome-File-Directory/discussions/new)** or join our **[Discord](https://discord.gg/b7XPBfzZPC)**.
+Further customization options for different types of files and folder structures can be found in [`CUSTOMIZATION`](https://github.com/willtheorangeguy/Chrome-File-Directory/blob/main/docs/CUSTOMIZATION.md). More documentation is available in the **[Documentation](https://github.com/willtheorangeguy/Chrome-File-Directory/tree/main/docs)** and on the **[Wiki](https://github.com/willtheorangeguy/Chrome-File-Directory/wiki)**. If more support is required, please open a **[GitHub Discussion](https://github.com/willtheorangeguy/Chrome-File-Directory/discussions/new)** or join our **[Discord](https://discord.gg/b7XPBfzZPC)**.
 
 ## Contributing
 
@@ -158,10 +160,10 @@ This software uses the following open source packages, projects, services or web
 <!-- Credits Table -->
 <table>
   <tr>
-    <th align="center"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="200" height="200" alt="GitHub"/></th>
-    <th align="center"><img src="https://pbs.twimg.com/profile_images/1069553420854591489/stZUQMcC_400x400.jpg" width="200" height="200" alt="W3C"/></th>
-    <th align="center"><img src="https://videos.w3schools.com/files/images/w3schools_logo_500_04AA6D.png" width="250" height="150" alt="W3Schools"/></th>
-    <th align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Chromium_Logo.svg/800px-Chromium_Logo.svg.png" width="250" height="200" alt="Chrome"/></th>
+    <th align="center"><img src="https://applets.imgix.net/https%3A%2F%2Fassets.ifttt.com%2Fimages%2Fchannels%2F2107379463%2Ficons%2Fmonochrome_large.png?w=240&h=240&s=8a19bbc158996d098e2fb18310ba7f33" width="150" height="150" alt="GitHub"/></th>
+    <th align="center"><img src="https://pbs.twimg.com/profile_images/1069553420854591489/stZUQMcC_400x400.jpg" width="150" height="150" alt="W3C"/></th>
+    <th align="center"><img src="https://videos.w3schools.com/files/images/w3schools_logo_500_04AA6D.png" width="150" height="150" alt="W3Schools"/></th>
+    <th align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Chromium_Logo.svg/1200px-Chromium_Logo.svg.png" width="150" height="150" alt="Chrome"/></th>
   </tr>
   <tr>
     <td align="center">GitHub</td>
@@ -189,6 +191,6 @@ This software uses the following open source packages, projects, services or web
 
 ## License
 
-**The website code in this repository is created by the [Chromium Development Team](https://www.chromium.org/Home/) and maintained by Google. The browser is released under the BSD 2-Clause “Simplified” License, and this project follows those licensing guidelines.**
+**The website code in this repository is created by the [Chromium Development Team](https://www.chromium.org/Home/) and maintained by Google. The browser is released under the BSD 3-Clause License, and this project follows those licensing guidelines.**
 
 This project is licensed under the [BSD 2-Clause “Simplified” License](https://choosealicense.com/licenses/bsd-2-clause/) - see the [`LICENSE`](LICENSE.md) file for details. See the [Privacy Policy](https://github.com/willtheorangeguy/Chrome-File-Directory/blob/main/docs/legal/PRIVACY.md) and [Terms and Conditions](https://github.com/willtheorangeguy/Chrome-File-Directory/blob/main/docs/legal/TERMS.md) for legal information.
