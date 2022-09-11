@@ -14,7 +14,7 @@
   <!-- Stability -->
   <img alt="Docker State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/docker-pubish.yml/badge.svg">
   <!-- Stability -->
-  <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/pages/pages-build-deployment/badge.svg">
+  <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/pages.yml/badge.svg">
   <!-- Gitleaks -->
   <img alt="Gitleaks State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/gitleaks.yml/badge.svg">
   <!-- Version -->
@@ -83,7 +83,7 @@ You can also pull the [Docker](https://www.docker.com/) image from GitHub Packag
 $ docker pull ghcr.io/willtheorangeguy/chrome-file-directory:main
 
 # Run container
-$ docker run -d -p 80 ghcr.io/willtheorangeguy/chrome-file-directory:main
+$ docker run -d -p 8000:80 ghcr.io/willtheorangeguy/chrome-file-directory:main
 
 # Now, navigate to localhost in your browser to see the webpage
 ```
