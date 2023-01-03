@@ -1,6 +1,6 @@
 # BSD 2-Clause License
 
-Copyright (C) 2021, @willtheorangeguy and the Chromium Authors
+Copyright (C) 2021-2023, @willtheorangeguy and the Chromium Authors
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
