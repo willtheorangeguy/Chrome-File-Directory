@@ -4,102 +4,131 @@ found in the LICENSE file. -->
 <!-- Copyright (c) 2021-2023, @willtheorangeguy
 All rights reserved. -->
 
-<!DOCTYPE html>
-<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>
-  h1 {
-    border-bottom: 1px solid #c0c0c0;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    white-space: nowrap;
-  }
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      h1 {
+        border-bottom: 1px solid #c0c0c0;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        white-space: nowrap;
+      }
 
-  table {
-    border-collapse: collapse;
-  }
+      table {
+        border-collapse: collapse;
+      }
 
-  th {
-    cursor: pointer;
-  }
+      th {
+        cursor: pointer;
+      }
 
-  td.detailsColumn {
-    -webkit-padding-start: 2em;
-    text-align: end;
-    white-space: nowrap;
-  }
+      td.detailsColumn {
+        -webkit-padding-start: 2em;
+        text-align: end;
+        white-space: nowrap;
+      }
 
-  a.icon {
-    -webkit-padding-start: 1.5em;
-    text-decoration: none;
-    user-select: auto;
-  }
+      a.icon {
+        -webkit-padding-start: 1.5em;
+        text-decoration: none;
+        user-select: auto;
+      }
 
-  a.icon:hover {
-    text-decoration: underline;
-  }
+      a.icon:hover {
+        text-decoration: underline;
+      }
 
-  a.file {
-    background : url("icons/file.png") left top no-repeat;
-  }
+      a.file {
+        background: url("icons/file.png") left top no-repeat;
+      }
 
-  a.dir {
-    background : url("icons/folder.png") left top no-repeat;
-  }
+      a.dir {
+        background: url("icons/folder.png") left top no-repeat;
+      }
 
-  a.up {
-    background : url("icons/up.png") left top no-repeat;
-  }
+      a.up {
+        background: url("icons/up.png") left top no-repeat;
+      }
 
-  html[dir=rtl] a {
-    background-position-x: right;
-  }
+      html[dir="rtl"] a {
+        background-position-x: right;
+      }
 
-  #parentDirLinkBox {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-  }
+      #parentDirLinkBox {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
 
-  #listingParsingErrorBox {
-    border: 1px solid black;
-    background: #fae691;
-    padding: 10px;
-    display: none;
-  }
-</style>
-<title id="title">Index of example</title>
-</head>
+      #listingParsingErrorBox {
+        border: 1px solid black;
+        background: #fae691;
+        padding: 10px;
+        display: none;
+      }
+    </style>
+    <title id="title">Index of example</title>
+  </head>
 
-<body>
-<h1 id="header">Index of :\directory</h1>
-<div id="parentDirLinkBox" style="display:none">
-  <a id="parentDirLink" href="up/level" class="icon up">
-    <span id="parentDirText">[parent directory]</span>
-  </a>
-</div>
-<table>
-  <thead>
-    <tr class="header" id="theader">
-      <th id="nameColumnHeader" tabindex="0" role="button">Name</th>
-      <th id="typeColumnHeader" class="detailsColumn" tabindex="0" role="button">
-        Type
-      </th>
-      <th id="sizeColumnHeader" class="detailsColumn" tabindex="0" role="button">
-        Size
-      </th>
-      <th id="dateColumnHeader" class="detailsColumn" tabindex="0" role="button">
-        Date Uploaded
-      </th>
-    </tr>
-  </thead>
-  <tbody id="tbody">
-  <tr>
-    <td data-value="Folder"><a class="icon dir" href="link/to/folder">Folder</a></td>
-    <td class="detailsColumn" data-value="0"></td><td class="detailsColumn" data-value="0"></td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
-  </tr>
-  <tr>
-  <tr>
-    <td data-value="File"><a class="icon file" draggable="true" href="link/to/file">File.txt</a></td>
-    <td class="detailsColumn">File</td><td class="detailsColumn">0.00 MB</td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
-  </tr>
-</tbody>
-</table>
+  <body>
+    <h1 id="header">Index of :\directory</h1>
+    <div id="parentDirLinkBox" style="display: none">
+      <a id="parentDirLink" href="up/level" class="icon up">
+        <span id="parentDirText">[parent directory]</span>
+      </a>
+    </div>
+    <table>
+      <thead>
+        <tr class="header" id="theader">
+          <th id="nameColumnHeader" tabindex="0" role="button">Name</th>
+          <th
+            id="typeColumnHeader"
+            class="detailsColumn"
+            tabindex="0"
+            role="button"
+          >
+            Type
+          </th>
+          <th
+            id="sizeColumnHeader"
+            class="detailsColumn"
+            tabindex="0"
+            role="button"
+          >
+            Size
+          </th>
+          <th
+            id="dateColumnHeader"
+            class="detailsColumn"
+            tabindex="0"
+            role="button"
+          >
+            Date Uploaded
+          </th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <td data-value="Folder">
+            <a class="icon dir" href="link/to/folder">Folder</a>
+          </td>
+          <td class="detailsColumn" data-value="0"></td>
+          <td class="detailsColumn" data-value="0"></td>
+          <td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td data-value="File">
+            <a class="icon file" draggable="true" href="link/to/file"
+              >File.txt</a
+            >
+          </td>
+          <td class="detailsColumn">File</td>
+          <td class="detailsColumn">0.00 MB</td>
+          <td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

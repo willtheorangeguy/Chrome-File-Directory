@@ -43,17 +43,18 @@
 </p>
 
 <!-- Screenshot(s) -->
+
 ![screenshot](https://raw.githubusercontent.com/willtheorangeguy/Chrome-File-Directory/main/docs/images/welcome.png)
 
 ## Key Features
 
-* Basic file directory view.
-* Name, type, size and upload date.
-* Folder and file links.
-* Icons for folders and files.
-* Compatible with all web servers and websites.
-* Includes an automatically generated file listing.
-* Cross platform.
+- Basic file directory view.
+- Name, type, size and upload date.
+- Folder and file links.
+- Icons for folders and files.
+- Compatible with all web servers and websites.
+- Includes an automatically generated file listing.
+- Cross platform.
 
 ## Download
 
@@ -109,13 +110,13 @@ However, **to make this your own directory**, either use the `index_chromium.htm
 4. _Line 74_: If this is a directory inside of another directory, remove the `style="display:none"` placeholder in the `div` tag.
 
 ```html
-<div id="parentDirLinkBox" style="display:none">
+<div id="parentDirLinkBox" style="display:none"></div>
 ```
 
 5. _Line 75_: If this is a directory inside of another directory, change the `up/level` placeholder in the `href="..."` tag with the actual link to the folder above.
 
 ```html
-    <a id="parentDirLink" href="up/level" class="icon up">
+<a id="parentDirLink" href="up/level" class="icon up"></a>
 ```
 
 6. When you have customized the title, and added folder and file listings following the tutorials below, save the files and upload them to your web server.
@@ -125,33 +126,40 @@ However, **to make this your own directory**, either use the `index_chromium.htm
 
 ```html
 <tr>
-    <td data-value="Folder"><a class="icon dir" href="link/to/folder">Folder</a></td>
-    <td class="detailsColumn" data-value="0"></td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
-  </tr>
+  <td data-value="Folder">
+    <a class="icon dir" href="link/to/folder">Folder</a>
+  </td>
+  <td class="detailsColumn" data-value="0"></td>
+  <td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+</tr>
 ```
 
-* Replace the `"Folder"` placeholder value (between the `data-value="..."` tag) with the real name of the folder.
-* Replace the `"link/to/folder"` link (between the `href="..."` tag) with the actual link to the folder.
-* Replace the `Folder` placeholder name (between the `<a>...</a>` tag) with the real name of the folder.
-* Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date the folder was uploaded.
-* Add more of these rows as necessary.
+- Replace the `"Folder"` placeholder value (between the `data-value="..."` tag) with the real name of the folder.
+- Replace the `"link/to/folder"` link (between the `href="..."` tag) with the actual link to the folder.
+- Replace the `Folder` placeholder name (between the `<a>...</a>` tag) with the real name of the folder.
+- Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date the folder was uploaded.
+- Add more of these rows as necessary.
 
 ### For a File
 
 ```html
 <tr>
-    <td data-value="File"><a class="icon file" draggable="true" href="link/to/file">File.txt</a></td>
-    <td class="detailsColumn">File</td><td class="detailsColumn">0.00 MB</td><td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
-  </tr>
+  <td data-value="File">
+    <a class="icon file" draggable="true" href="link/to/file">File.txt</a>
+  </td>
+  <td class="detailsColumn">File</td>
+  <td class="detailsColumn">0.00 MB</td>
+  <td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
+</tr>
 ```
 
-* Replace the `"File"` placeholder value (between the `data-value="..."` tag) with the real name of the file.
-* Replace the `"link/to/file"` link (between the `href="..."` tag) with the actual link to the file.
-* Replace the `File.txt` placeholder name (between the `<a>...</a>` tag) with the real name and extension of the file.
-* Replace the `File` placeholder text with the actual file type.
-* Replace the `0.00 MB` placeholder size with the real size of the file.
-* Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date and time the file was uploaded.
-* Add more of these rows as necessary.
+- Replace the `"File"` placeholder value (between the `data-value="..."` tag) with the real name of the file.
+- Replace the `"link/to/file"` link (between the `href="..."` tag) with the actual link to the file.
+- Replace the `File.txt` placeholder name (between the `<a>...</a>` tag) with the real name and extension of the file.
+- Replace the `File` placeholder text with the actual file type.
+- Replace the `0.00 MB` placeholder size with the real size of the file.
+- Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date and time the file was uploaded.
+- Add more of these rows as necessary.
 
 ## Support
 
@@ -195,13 +203,13 @@ This software uses the following open source packages, projects, services or web
 
 ## Contributors
 
-* [@willtheorangeguy](https://github.com/willtheorangeguy) - Sponsor on [PayPal](https://paypal.me/wvdg44?country.x=CA&locale.x=en_US)
+- [@willtheorangeguy](https://github.com/willtheorangeguy) - Sponsor on [PayPal](https://paypal.me/wvdg44?country.x=CA&locale.x=en_US)
 
 ## You may also like...
 
-* [Running Calculator](https://github.com/willtheorangeguy/Running-Calculator) - A running speed calculator for any unit of distance.
-* [PyWorkout](https://github.com/willtheorangeguy/PyWorkout) - A minimal CLI to keep you inspired during your workout! Easily used and customized, with support for multiple workout plans, different muscle groups and video workouts.
-* [PyAvatar](https://github.com/willtheorangeguy/PyAvatar) - Easily display all of your creative avatars to keep them consistent across websites.
+- [Running Calculator](https://github.com/willtheorangeguy/Running-Calculator) - A running speed calculator for any unit of distance.
+- [PyWorkout](https://github.com/willtheorangeguy/PyWorkout) - A minimal CLI to keep you inspired during your workout! Easily used and customized, with support for multiple workout plans, different muscle groups and video workouts.
+- [PyAvatar](https://github.com/willtheorangeguy/PyAvatar) - Easily display all of your creative avatars to keep them consistent across websites.
 
 ## License
 
