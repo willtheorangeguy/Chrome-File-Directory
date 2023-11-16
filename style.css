@@ -5,60 +5,60 @@ found in the LICENSE file. */
 All rights reserved. */
 
 h1 {
-    border-bottom: 1px solid #c0c0c0;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    white-space: nowrap;
-  }
+  border-bottom: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
 
-  table {
-    border-collapse: collapse;
-  }
+table {
+  border-collapse: collapse;
+}
 
-  th {
-    cursor: pointer;
-  }
+th {
+  cursor: pointer;
+}
 
-  td.detailsColumn {
-    -webkit-padding-start: 2em;
-    text-align: end;
-    white-space: nowrap;
-  }
+td.detailsColumn {
+  -webkit-padding-start: 2em;
+  text-align: end;
+  white-space: nowrap;
+}
 
-  a.icon {
-    -webkit-padding-start: 1.5em;
-    text-decoration: none;
-    user-select: auto;
-  }
+a.icon {
+  -webkit-padding-start: 1.5em;
+  text-decoration: none;
+  user-select: auto;
+}
 
-  a.icon:hover {
-    text-decoration: underline;
-  }
+a.icon:hover {
+  text-decoration: underline;
+}
 
-  a.file {
-    background : url("imgs/file.png") left top no-repeat;
-  }
+a.file {
+  background: url("imgs/file.png") left top no-repeat;
+}
 
-  a.dir {
-    background : url("imgs/folder.png") left top no-repeat;
-  }
+a.dir {
+  background: url("imgs/folder.png") left top no-repeat;
+}
 
-  a.up {
-    background : url("imgs/up.png") left top no-repeat;
-  }
+a.up {
+  background: url("imgs/up.png") left top no-repeat;
+}
 
-  html[dir=rtl] a {
-    background-position-x: right;
-  }
+html[dir="rtl"] a {
+  background-position-x: right;
+}
 
-  #parentDirLinkBox {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-  }
+#parentDirLinkBox {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
 
-  #listingParsingErrorBox {
-    border: 1px solid black;
-    background: #fae691;
-    padding: 10px;
-    display: none;
-  }
+#listingParsingErrorBox {
+  border: 1px solid black;
+  background: #fae691;
+  padding: 10px;
+  display: none;
+}
