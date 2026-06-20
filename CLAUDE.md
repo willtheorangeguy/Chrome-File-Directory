@@ -32,6 +32,7 @@ Chrome File Directory is a static HTML page that replicates the Chromium browser
 **No build step or dependencies.** This is a pure static HTML/CSS project. Open `index.html` in a browser to preview.
 
 **Running locally with Docker:**
+
 ```bash
 docker build -t chrome-file-directory .
 docker run -p 8080:80 chrome-file-directory
