@@ -45,11 +45,11 @@ server to run.
 
 ## Automation
 
-| Workflow | Trigger | Does |
-|---|---|---|
-| `pages.yml` | push to `main` | Deploys to GitHub Pages |
-| `docker-pubish.yml` | push to `main` | Builds and pushes to GHCR |
-| `gitleaks.yml` | pushes and PRs | Scans for committed secrets |
+| Workflow            | Trigger        | Does                        |
+| ------------------- | -------------- | --------------------------- |
+| `pages.yml`         | push to `main` | Deploys to GitHub Pages     |
+| `docker-pubish.yml` | push to `main` | Builds and pushes to GHCR   |
+| `gitleaks.yml`      | pushes and PRs | Scans for committed secrets |
 
 The Docker workflow filename is misspelled. It works — the README badge points at the same
 name — but it differs from the sibling repositories.
