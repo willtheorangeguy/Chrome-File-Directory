@@ -1,179 +1,74 @@
 <!-- Logo -->
 <h1 align="center">
-  <img src="https://raw.githubusercontent.com/willtheorangeguy/Chrome-File-Directory/main/docs/images/logo.png" height="250px" width="550px" alt="Chrome File Directory">
+  <img src="https://raw.githubusercontent.com/willtheorangeguy/.github/main/icons/Chrome-File-Directory/logo.png" height="250px" width="400px" alt="Chrome File Directory">
   <br>
   Chrome File Directory
   <br>
 </h1>
 
 <!-- Copy -->
-<h4 align="center">The basic Chrome file directory page, as a simple HTML page.</h4>
+<h4 align="center">The Chromium file directory listing page, as a static HTML file you can drop anywhere.</h4>
 
 <!-- Badges -->
 <div align="center">
-  <!-- Stability -->
   <img alt="Docker State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/docker-pubish.yml/badge.svg">
-  <!-- Stability -->
   <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/pages.yml/badge.svg">
-  <!-- Gitleaks -->
   <img alt="Gitleaks State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/gitleaks.yml/badge.svg">
-  <!-- Version -->
   <img alt="GitHub Version" src="https://img.shields.io/github/v/release/willtheorangeguy/Chrome-File-Directory">
-  <!-- Issues -->
   <img alt="GitHub Issues" src="https://img.shields.io/github/issues/willtheorangeguy/Chrome-File-Directory">
-  <!-- Pull Requests -->
   <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/willtheorangeguy/Chrome-File-Directory">
-  <!-- Discord -->
-  <img alt="Discord Server ID" src="https://img.shields.io/discord/962928406595514379">
-  <!-- Downloads -->
-  <img alt="Downloads" src="https://img.shields.io/github/downloads/willtheorangeguy/Chrome-File-Directory/total">
-  <!-- Language Count -->
-  <img alt="GitHub Languages" src="https://img.shields.io/github/languages/count/willtheorangeguy/Chrome-File-Directory">
 </div>
 
 <!-- Navigation -->
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#download">Download</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#documentation">Documentation</a> •
   <a href="#support">Support</a> •
   <a href="#contributing">Contributing</a> •
-  <a href="#changelog">Changelog</a> •
-  <a href="#credits">Credits & Contributors</a>
+  <a href="#credits">Credits</a> •
+  <a href="#attribution">Attribution</a> •
+  <a href="#license">License</a>
 </p>
 
-<!-- Screenshot(s) -->
-
-![screenshot](https://raw.githubusercontent.com/willtheorangeguy/Chrome-File-Directory/main/docs/images/welcome.png)
+<!-- Hero -->
+![screenshot](https://raw.githubusercontent.com/willtheorangeguy/.github/main/icons/Chrome-File-Directory/welcome.png)
 
 ## Key Features
 
-- Basic file directory view.
-- Name, type, size and upload date.
-- Folder and file links.
+- The Chromium directory listing UI, as static HTML.
+- Name, type, size, and upload date columns.
 - Icons for folders and files.
-- Compatible with all web servers and websites.
-- Includes an automatically generated file listing.
-- Cross platform.
+- Two versions: a simplified one to edit by hand, and the original Chromium page for reference.
+- No build step and no dependencies.
+- Works on any web server, or as a GitHub Pages site.
 
-## Download
-
-You can **[download](https://github.com/willtheorangeguy/Chrome-File-Directory/releases/latest) the source code** to modify the code and create your own file directory page.
-
-You can also access the **production version the website**, available on all platforms, **[here](https://willtheorangeguy.github.io/Chrome-File-Directory/)**.
-
-## How To Use
-
-To clone and run this website, you'll need [Git](https://git-scm.com/downloads) installed on your computer. If you would rather not use Git, you can just download the code from GitHub above. From your command line:
+## Installation
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/willtheorangeguy/Chrome-File-Directory.git
-
-# Go into the repository
-$ cd Chrome-File-Directory
-
-# Run the webpage
-$ index.html
+git clone https://github.com/willtheorangeguy/Chrome-File-Directory.git
+cd Chrome-File-Directory
 ```
 
-You can also pull the [Docker](https://www.docker.com/) image from GitHub Packages. From your command line:
+Then open `index.html` in a browser. There is nothing to install — see [`docs/quickstart.md`](docs/quickstart.md).
 
-```bash
-# Pull image
-$ docker pull ghcr.io/willtheorangeguy/chrome-file-directory:main
+## Usage
 
-# Run container
-$ docker run -d -p 8000:80 ghcr.io/willtheorangeguy/chrome-file-directory:main
+Edit `index.html` to list your own files: set the title, then add a row per file or folder. [`docs/usage.md`](docs/usage.md) walks through it.
 
-# Now, navigate to localhost in your browser to see the webpage
-```
+## Documentation
 
-However, **to make this your own directory**, either use the `index_chromium.html` file to create a self generating directory - or use the `index.html` file to create a custom directory listing with custom links.
-
-### Basics
-
-1. If you would rather have the styling for the page in its own separate location, copy the `style.css` file to that location and link it in the top of the `index.html` file. More instructions can be found in [CUSTOMIZATION](https://github.com/willtheorangeguy/Chrome-File-Directory/tree/main/docs/CUSTOMIZATION.md).
-
-2. _Line 69_: Update the `example` placeholder text between the `<title>` tags with the actual directory name. This will be the title of the webpage.
-
-```html
-<title id="title">Index of example</title>
-```
-
-3. _Line 73_: Update the `:\directory` placeholder text between the `<h1>` tags with the actual directory path. This will be the title displayed on the page.
-
-```html
-<h1 id="header">Index of :\directory</h1>
-```
-
-4. _Line 74_: If this is a directory inside of another directory, remove the `style="display:none"` placeholder in the `div` tag.
-
-```html
-<div id="parentDirLinkBox" style="display:none"></div>
-```
-
-5. _Line 75_: If this is a directory inside of another directory, change the `up/level` placeholder in the `href="..."` tag with the actual link to the folder above.
-
-```html
-<a id="parentDirLink" href="up/level" class="icon up"></a>
-```
-
-6. When you have customized the title, and added folder and file listings following the tutorials below, save the files and upload them to your web server.
-7. You're all set!
-
-### For a Folder
-
-```html
-<tr>
-  <td data-value="Folder">
-    <a class="icon dir" href="link/to/folder">Folder</a>
-  </td>
-  <td class="detailsColumn" data-value="0"></td>
-  <td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
-</tr>
-```
-
-- Replace the `"Folder"` placeholder value (between the `data-value="..."` tag) with the real name of the folder.
-- Replace the `"link/to/folder"` link (between the `href="..."` tag) with the actual link to the folder.
-- Replace the `Folder` placeholder name (between the `<a>...</a>` tag) with the real name of the folder.
-- Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date the folder was uploaded.
-- Add more of these rows as necessary.
-
-### For a File
-
-```html
-<tr>
-  <td data-value="File">
-    <a class="icon file" draggable="true" href="link/to/file">File.txt</a>
-  </td>
-  <td class="detailsColumn">File</td>
-  <td class="detailsColumn">0.00 MB</td>
-  <td class="detailsColumn">MM/DD/YY, HH:MM:SS PM</td>
-</tr>
-```
-
-- Replace the `"File"` placeholder value (between the `data-value="..."` tag) with the real name of the file.
-- Replace the `"link/to/file"` link (between the `href="..."` tag) with the actual link to the file.
-- Replace the `File.txt` placeholder name (between the `<a>...</a>` tag) with the real name and extension of the file.
-- Replace the `File` placeholder text with the actual file type.
-- Replace the `0.00 MB` placeholder size with the real size of the file.
-- Replace the `MM/DD/YY, HH:MM:SS PM` placeholder date with the date and time the file was uploaded.
-- Add more of these rows as necessary.
+Full documentation lives in [`docs/`](docs/README.md):
+[Quickstart](docs/quickstart.md) · [Installation](docs/installation.md) · [Usage](docs/usage.md) · [Configuration](docs/configuration.md) · [Architecture](docs/architecture.md) · [Deployment](docs/deployment.md) · [FAQ](docs/faq.md) · [Troubleshooting](docs/troubleshooting.md) · [Roadmap](docs/roadmap.md)
 
 ## Support
 
-Further customization options for different types of files and folder structures can be found in [`CUSTOMIZATION`](https://github.com/willtheorangeguy/Chrome-File-Directory/blob/main/docs/CUSTOMIZATION.md). More documentation is available in the **[Documentation](https://github.com/willtheorangeguy/Chrome-File-Directory/tree/main/docs)** and on the **[Wiki](https://github.com/willtheorangeguy/Chrome-File-Directory/wiki)**. If more support is required, please open a **[GitHub Discussion](https://github.com/willtheorangeguy/Chrome-File-Directory/discussions/new)** or join our **[Discord](https://discord.gg/b7XPBfzZPC)**.
+Open a [GitHub Discussion](https://github.com/willtheorangeguy/Chrome-File-Directory/discussions/new) or file an [issue](https://github.com/willtheorangeguy/Chrome-File-Directory/issues/new/choose).
 
 ## Contributing
 
-Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/willtheorangeguy/Chrome-File-Directory/compare).
-
-Please read [`CONTRIBUTING`](https://github.com/willtheorangeguy/.github/blob/main/CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](https://github.com/willtheorangeguy/.github/blob/main/CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
-
-## Changelog
-
-See the [`CHANGELOG`](CHANGELOG.md) file for details.
+Contributions welcome. See the org-wide [Contributing Guide](https://github.com/willtheorangeguy/.github/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/willtheorangeguy/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## Credits
 
@@ -185,7 +80,7 @@ This software uses the following open source packages, projects, services or web
     <th align="center"><img src="https://applets.imgix.net/https%3A%2F%2Fassets.ifttt.com%2Fimages%2Fchannels%2F2107379463%2Ficons%2Fmonochrome_large.png?w=240&h=240&s=8a19bbc158996d098e2fb18310ba7f33" width="150" height="150" alt="GitHub"/></th>
     <th align="center"><img src="https://www.w3.org/assets/logos/w3c/w3c-no-bars.svg" width="150" height="150" alt="W3C"/></th>
     <th align="center"><img src="https://videos.w3schools.com/files/images/w3schools_logo_500_04AA6D.png" width="150" height="150" alt="W3Schools"/></th>
-    <th align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Chromium_Logo.svg/1200px-Chromium_Logo.svg.png" width="150" height="150" alt="Chrome"/></th>
+    <th align="center"><img src="https://avatars.githubusercontent.com/u/1778935?s=200&v=4" width="150" height="150" alt="Chrome"/></th>
   </tr>
   <tr>
     <td align="center">GitHub</td>
@@ -197,22 +92,18 @@ This software uses the following open source packages, projects, services or web
     <td align="center"><a href="https://github.com/">Web</a> - <a href="https://github.com/pricing">Plans</a></td>
     <td align="center"><a href="https://www.w3.org">Web</a> - <a href="https://www.w3.org/support/">Donate</a></td>
     <td align="center"><a href="https://www.w3schools.com">Web</a> - <a href="https://www.w3schools.com/pro/index.php">Pro</a></td>
-    <td align="center"><a href="https://www.chromium.org/chromium-projects/">Web</a></td>
+    <td align="center"><a href="https://www.chromium.org/Home/">Web</a></td>
   </tr>
 </table>
 
-## Contributors
+## Attribution
 
-- [@willtheorangeguy](https://github.com/willtheorangeguy) - Sponsor on [PayPal](https://paypal.me/wvdg44?country.x=CA&locale.x=en_US)
-
-## You may also like...
-
-- [Running Calculator](https://github.com/willtheorangeguy/Running-Calculator) - A running speed calculator for any unit of distance.
-- [PyWorkout](https://github.com/willtheorangeguy/PyWorkout) - A minimal CLI to keep you inspired during your workout! Easily used and customized, with support for multiple workout plans, different muscle groups and video workouts.
-- [PyAvatar](https://github.com/willtheorangeguy/PyAvatar) - Easily display all of your creative avatars to keep them consistent across websites.
+The page this reproduces is the work of the
+[Chromium Development Team](https://www.chromium.org/Home/), maintained by Google. Chromium is
+released under the BSD 3-Clause License; the upstream notice is preserved in
+[`LICENSE_chromium.md`](LICENSE_chromium.md), and `index_chromium.html` is kept unmodified as
+a reference copy.
 
 ## License
 
-**The website code in this repository is created by the [Chromium Development Team](https://www.chromium.org/Home/) and maintained by Google. The browser is released under the BSD 3-Clause License, and this project follows those licensing guidelines.**
-
-This project is licensed under the [BSD 2-Clause “Simplified” License](https://choosealicense.com/licenses/bsd-2-clause/) - see the [`LICENSE`](LICENSE.md) file for details. See the [Privacy Policy](https://github.com/willtheorangeguy/Chrome-File-Directory/blob/main/docs/legal/PRIVACY.md) and [Terms and Conditions](https://github.com/willtheorangeguy/Chrome-File-Directory/blob/main/docs/legal/TERMS.md) for legal information.
+BSD 2-Clause — see [`LICENSE.md`](LICENSE.md). Also see the [Privacy Policy](docs/legal/privacy.md) and [Terms and Conditions](docs/legal/terms.md).
