@@ -7,7 +7,6 @@ licensing decision rather than a documentation one.
 Ordered by severity. See [`docs/roadmap.md`](../roadmap.md) for the narrative version,
 which also covers deliberate non-goals.
 
-
 **3 open:** 1 medium, 2 low.
 
 ## 1. `style.css` references a directory that does not exist
@@ -42,7 +41,6 @@ which also covers deliberate non-goals.
 **Why it matters:** The most common user error with this project.
 
 **Suggested fix:** Ship them commented out.
-
 
 ---
 

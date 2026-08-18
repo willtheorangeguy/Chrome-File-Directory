@@ -20,12 +20,12 @@ anything.
 
 ## What you need to copy
 
-| Path | Required |
-|---|---|
-| `index.html` | Yes — this is the page you edit |
-| `icons/` | Yes — icons are referenced by relative path |
-| `index_chromium.html` | No — reference copy only |
-| `style.css` | Only if you want an external stylesheet; see below |
+| Path                  | Required                                           |
+| --------------------- | -------------------------------------------------- |
+| `index.html`          | Yes — this is the page you edit                    |
+| `icons/`              | Yes — icons are referenced by relative path        |
+| `index_chromium.html` | No — reference copy only                           |
+| `style.css`           | Only if you want an external stylesheet; see below |
 
 Copying `index.html` alone leaves broken images in every row, which is the usual first-time
 problem.

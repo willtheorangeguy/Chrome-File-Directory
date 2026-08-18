@@ -17,13 +17,13 @@ and the page heading.
 
 Copy the shape of the example rows already in the file. Each row carries:
 
-| Column | Notes |
-|---|---|
-| Icon | `icons/folder.png` for folders, `icons/file.png` for files |
-| Name | The display name, wrapped in the link |
-| Link | The `href` — the real path to the file or folder |
-| Size | Free text |
-| Date | Free text; nothing computes it |
+| Column | Notes                                                      |
+| ------ | ---------------------------------------------------------- |
+| Icon   | `icons/folder.png` for folders, `icons/file.png` for files |
+| Name   | The display name, wrapped in the link                      |
+| Link   | The `href` — the real path to the file or folder           |
+| Size   | Free text                                                  |
+| Date   | Free text; nothing computes it                             |
 
 The parent-directory row uses `icons/up.png`.
 
@@ -49,5 +49,5 @@ swap the icons, see [Configuration](./configuration.md).
 It does not read a directory. Nothing scans a folder and generates rows — the listing is
 whatever you typed, and it goes stale the moment the real directory changes.
 
-The original `index_chromium.html` *does* build its listing dynamically, which is why the
+The original `index_chromium.html` _does_ build its listing dynamically, which is why the
 feature list mentions automatic generation. That is the Chromium page, not the simplified one.

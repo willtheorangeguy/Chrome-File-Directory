@@ -7,7 +7,6 @@ All of these instructions require [a text editor](https://code.visualstudio.com/
 ## Basics
 
 1. If you would rather have the styling for the page in its own separate location, copy the `style.css` file to that location and link it in the top of the `index.html` file. To do so, follow the steps below:
-
    1. Delete lines 9 through 68.
    2. Find the link to the `style.css` file.
    3. Add `<link rel="stylesheet" href="style.css">` to line 9.

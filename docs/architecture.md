@@ -22,18 +22,18 @@ times the size and contains six script blocks, because the real browser page bui
 listing dynamically. It exists for reference and for honest attribution — not for editing.
 
 The distinction also explains a feature claim that would otherwise be confusing: the
-*Chromium* page generates listings; the simplified one does not.
+_Chromium_ page generates listings; the simplified one does not.
 
 ## Static means hand-maintained
 
 `index.html` does not read a directory. Every row exists because someone typed it, and nothing
 validates that a link resolves or a size is accurate.
 
-| Property | Because |
-|---|---|
-| Works from `file://` | Nothing is fetched |
-| Deploys by copying files | There is nothing to build |
-| Goes stale silently | Nothing re-reads the directory |
+| Property                 | Because                        |
+| ------------------------ | ------------------------------ |
+| Works from `file://`     | Nothing is fetched             |
+| Deploys by copying files | There is nothing to build      |
+| Goes stale silently      | Nothing re-reads the directory |
 
 A browser generates this listing when it opens a local folder. This is a picture of one.
 
@@ -60,11 +60,11 @@ page portable and means copying only the HTML breaks every image.
 
 ## Automation
 
-| Workflow | Purpose |
-|---|---|
-| `pages.yml` | Deploys to GitHub Pages on push to `main` |
-| `docker-pubish.yml` | Publishes the image to GHCR |
-| `gitleaks.yml` | Scans for committed secrets |
+| Workflow            | Purpose                                   |
+| ------------------- | ----------------------------------------- |
+| `pages.yml`         | Deploys to GitHub Pages on push to `main` |
+| `docker-pubish.yml` | Publishes the image to GHCR               |
+| `gitleaks.yml`      | Scans for committed secrets               |
 
 The Docker workflow filename is misspelled — `docker-pubish.yml` rather than
 `docker-publish.yml`. It works, because the badge in the README points at the same misspelled

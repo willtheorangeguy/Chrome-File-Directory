@@ -13,9 +13,9 @@ Open `index.html` in a browser. No server needed.
 
 ## 2. Use the right file
 
-| File | Use it? |
-|---|---|
-| `index.html` | **Yes.** 135 lines, simplified, meant to be edited |
+| File                  | Use it?                                                                      |
+| --------------------- | ---------------------------------------------------------------------------- |
+| `index.html`          | **Yes.** 135 lines, simplified, meant to be edited                           |
 | `index_chromium.html` | No. The original Chromium page, 512 lines with JavaScript, kept as reference |
 
 Editing the wrong one is the easiest mistake here — see [Architecture](./architecture.md).
