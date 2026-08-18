@@ -1,4 +1,4 @@
-# Chrome File Directory Customization
+# Chrome File Directory — Configuration
 
 The Chrome File Directory has been designed to be heavily customizable. More file and folder listings can be added, and directory paths can be changed, and the icons for each type of file can be changed. **Just search for and change the placeholder values in each code section.** Additionally, ensure that you have deleted all the extra file and folder rows that are unnecessary for your file listing, so not to confuse users.
 
