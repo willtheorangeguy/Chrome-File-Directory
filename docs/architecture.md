@@ -2,7 +2,7 @@
 
 ## What is in the repository
 
-```
+```text
 index.html            the simplified, editable page (135 lines)
 index_chromium.html   the original Chromium page (512 lines, includes JavaScript)
 style.css             optional external stylesheet
@@ -62,7 +62,7 @@ page portable and means copying only the HTML breaks every image.
 
 | Workflow            | Purpose                                   |
 | ------------------- | ----------------------------------------- |
-| `pages.yml`         | Deploys to GitHub Pages on push to `main` |
+| `docs.yml`         | Deploys to GitHub Pages on push to `main` |
 | `docker-pubish.yml` | Publishes the image to GHCR               |
 | `gitleaks.yml`      | Scans for committed secrets               |
 

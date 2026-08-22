@@ -11,7 +11,7 @@ which also covers deliberate non-goals.
 
 ## 1. `style.css` references a directory that does not exist
 
-**Severity:** Medium  
+**Severity:** Medium
 **Where:** `style.css`
 
 **What:** It references `imgs/file.png`, `imgs/folder.png`, and `imgs/up.png`. The icons ship in **`icons/`**, and there is no `imgs/` directory anywhere in the repository.
@@ -22,7 +22,7 @@ which also covers deliberate non-goals.
 
 ## 2. The Docker workflow filename is misspelled
 
-**Severity:** Low  
+**Severity:** Low
 **Where:** `.github/workflows/docker-pubish.yml`
 
 **What:** Should be `docker-publish.yml`. It works, because the README badge points at the same misspelled name.
@@ -33,7 +33,7 @@ which also covers deliberate non-goals.
 
 ## 3. Example rows ship live rather than commented out
 
-**Severity:** Low  
+**Severity:** Low
 **Where:** `index.html`
 
 **What:** Forgetting to delete them leaves a listing advertising files that do not exist, and nothing warns you.

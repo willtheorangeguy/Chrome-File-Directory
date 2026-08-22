@@ -19,26 +19,26 @@ All of these instructions require [a text editor](https://code.visualstudio.com/
 <title id="title">Index of example</title>
 ```
 
-3. _Line 73_: Update the `:\directory` placeholder text between the `<h1>` tags with the actual directory path. This will be the title displayed on the page.
+1. _Line 73_: Update the `:\directory` placeholder text between the `<h1>` tags with the actual directory path. This will be the title displayed on the page.
 
 ```html
 <h1 id="header">Index of :\directory</h1>
 ```
 
-4. _Line 74_: If this is a directory inside of another directory, remove the `style="display:none"` placeholder in the `div` tag.
+1. _Line 74_: If this is a directory inside of another directory, remove the `style="display:none"` placeholder in the `div` tag.
 
 ```html
 <div id="parentDirLinkBox" style="display:none"></div>
 ```
 
-5. _Line 75_: If this is a directory inside of another directory, change the `up/level` placeholder in the `href="..."` tag with the actual link to the folder above.
+1. _Line 75_: If this is a directory inside of another directory, change the `up/level` placeholder in the `href="..."` tag with the actual link to the folder above.
 
 ```html
 <a id="parentDirLink" href="up/level" class="icon up"></a>
 ```
 
-6. When you have customized the title, and added folder and file listings following the tutorials below, save the files and upload them to your web server.
-7. You're all set!
+1. When you have customized the title, and added folder and file listings following the tutorials below, save the files and upload them to your web server.
+2. You're all set!
 
 ## For a Folder
 

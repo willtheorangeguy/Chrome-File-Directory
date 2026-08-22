@@ -38,7 +38,7 @@ optional alternative for people who prefer external CSS.
 The image name is lowercase — `ghcr.io/willtheorangeguy/chrome-file-directory`. GHCR requires
 lowercase, so the capitalised repository name will not work.
 
-## The listing shows files that do not exist.
+## The listing shows files that do not exist
 
 Leftover example rows from the shipped file. Deleting the ones you did not customise is a
 manual step nothing can check. See [Usage](./usage.md).

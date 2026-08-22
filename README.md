@@ -12,7 +12,7 @@
 <!-- Badges -->
 <div align="center">
   <img alt="Docker State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/docker-pubish.yml/badge.svg">
-  <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/pages.yml/badge.svg">
+  <img alt="GitHub Pages State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/docs.yml/badge.svg">
   <img alt="Gitleaks State" src="https://github.com/willtheorangeguy/Chrome-File-Directory/actions/workflows/gitleaks.yml/badge.svg">
   <img alt="GitHub Version" src="https://img.shields.io/github/v/release/willtheorangeguy/Chrome-File-Directory">
   <img alt="GitHub Issues" src="https://img.shields.io/github/issues/willtheorangeguy/Chrome-File-Directory">
@@ -60,7 +60,7 @@ Edit `index.html` to list your own files: set the title, then add a row per file
 
 ## Documentation
 
-Full documentation lives in [`docs/`](docs/README.md):
+Full documentation lives in [`docs/`](docs/index.md):
 [Quickstart](docs/quickstart.md) · [Installation](docs/installation.md) · [Usage](docs/usage.md) · [Configuration](docs/configuration.md) · [Architecture](docs/architecture.md) · [Deployment](docs/deployment.md) · [FAQ](docs/faq.md) · [Troubleshooting](docs/troubleshooting.md) · [Roadmap](docs/roadmap.md)
 
 ## Support

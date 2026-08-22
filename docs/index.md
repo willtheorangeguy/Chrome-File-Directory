@@ -3,7 +3,7 @@
 A static reproduction of the Chromium browser's file directory listing UI. Two HTML files, a
 folder of PNG icons, and no server-side component.
 
-```
+```text
 Chrome-File-Directory/
 ├── docs/
 │   ├── README.md          this page

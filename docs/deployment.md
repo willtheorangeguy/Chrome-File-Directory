@@ -37,7 +37,7 @@ Useful for previewing your edited copy rather than the published one.
 
 ## GitHub Pages
 
-`pages.yml` deploys on every push to `main`, which keeps
+`docs.yml` deploys on every push to `main`, which keeps
 <https://willtheorangeguy.github.io/Chrome-File-Directory/> current.
 
 Forking and enabling Pages gives you the same for your own copy — a hosted listing with no
@@ -47,7 +47,7 @@ server to run.
 
 | Workflow            | Trigger        | Does                        |
 | ------------------- | -------------- | --------------------------- |
-| `pages.yml`         | push to `main` | Deploys to GitHub Pages     |
+| `docs.yml`         | push to `main` | Deploys to GitHub Pages     |
 | `docker-pubish.yml` | push to `main` | Builds and pushes to GHCR   |
 | `gitleaks.yml`      | pushes and PRs | Scans for committed secrets |
 
